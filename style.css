@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Poppins&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200&display=swap');
+
+@font-face {
+    font-family: Android;
+    src: url('../pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --lilas: #6e7cf8c9;
+    --verde: #90F754;
+    --salmao: #F7A686;
+    --roxoesc: #3A45AB;
+    --verdeesc: #69AB43;
+    --agua: #62C2FC;
+    --roxo: #6f58e0;
+
+    --fontetitulo: 'Open Sans Condensed', sans-serif;
+    --fontepadrao: 'Roboto', sans-serif;
+    --fonteandroid: 'Android', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+body {
+    font-family: var(--fontepadrao);
+   
+}
+
+a.externo::after {
+    content: '\1F855';
+}
+header {
+    /* background-image: linear-gradient(to bottom,#6e7cf8c9, #6f58e0, #4d58bb); */
+
+    width: 100%;
+    min-height: 130px;
+    /*box-shadow: 1px 1px 6px black;*/
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    
+}
+
+header > h1 {
+    font-family: var(--fontetitulo);
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 3px rgba(0, 0, 0, 0.034);
+    
+}
+
+header > p {
+    text-align: center;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;   
+    text-shadow: 1px 3px rgba(0, 0, 0, 0.103); 
+    
+    
+}
+
+nav {
+
+    font-family: 'Encode Sans SC', sans-serif;;
+    margin-bottom: 10px;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+    
+ 
+   /* background-color: #4d58bb; */
+    
+}
+
+nav > a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: 0.5s;
+    
+}
+
+nav > a:hover {
+    color: rgb(180, 177, 177);
+    
+}
+
+main {
+    padding: 10px;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.377);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main strong {
+    font-weight: bold;
+    
+}
+main a {
+    color: black;
+}
+
+main a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--verdeesc)
+}
+
+img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main h1 {
+    font-family: var(--fontetitulo);
+    font-size: 30px;
+}
+
+main h2 {
+    font-family: var(--fontetitulo);
+    
+}
+
+main h3 {
+    font-family: var(--fontetitulo);
+}
+
+aside {
+    padding: 10px;
+    
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0'; /* o 00A0 é o espaço*/
+    list-style-position: inside;
+    columns: 2;
+    
+}
+
+aside > h3 {
+    text-align: center;  
+    margin: -5px -10px 0px -10px
+}
+
+aside > hr {
+    margin: 10px;
+    
+}
+ul.pages {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+ul.pages li {
+    display: inline;
+}
+ul.pages li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: underline;
+}
+ul.pages li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+ul.pages li a:hover:not(.active) {
+    color: rgba(88, 88, 88, 0.685);
+    transition-duration: 0.5s;
+}
+
+footer {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.411);
+    text-align: center;
+    margin: auto;
+    border-radius: 3px;
+    color: white;
+    padding: 13px;
+    background-color: rgba(0, 0, 0, 0.856);
+    font-size: 12px;
+    font-family: 'Encode Sans SC', sans-serif;
+    
+}
+footer > p > a {
+    color: white;
+}
+
+footer > p > a:hover {
+    color: crimson;
+    font-weight: bold;
+    text-decoration: none;
+}
